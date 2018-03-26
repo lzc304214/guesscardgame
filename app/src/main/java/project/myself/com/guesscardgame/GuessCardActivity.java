@@ -30,6 +30,7 @@ import java.util.List;
 
 public class GuessCardActivity extends AppCompatActivity implements View.OnClickListener {
 
+
     private static final String TAG = GuessCardActivity.class.getSimpleName();
     //牌列表
     private RecyclerView mRecyclerView;
