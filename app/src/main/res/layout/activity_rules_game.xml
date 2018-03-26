@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/back_p"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:text="游戏规则"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/bg_font"
+            android:text="游戏规则：猜牌游戏共有6张底牌，分别为1-6。其中初级有三张底牌，中级有4张底牌，高级有5张底牌。假设你选择的是中级，点击游戏开始，则随机选其中四张做底牌，移动牌是全部6张牌，判定移动牌的内容以及牌的位置是否和被猜测牌一祥，比如被猜测牌以及顺序是6, 4, 3, 1。用户第一轮选择了 1, 2, 3, 4,此时1，3, 4三张牌是被猜测 牌里有的，所以判定时得到了三个白色标志表示有三张牌存在于被猜测牌中，然 后3的位置和被猜测牌的位置一祥又得到了ー个黑色标志。在游戏成功完成时就 会得到4个白色标志和4个黑色标志，如果经过7轮都不能完成，那么游戏局结束，没有推測成功。"/>
+
+    </ScrollView>
+
+</LinearLayout>
